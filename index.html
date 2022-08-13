@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills</title>
+    <link rel="shortcut icon" href="https://paytm.com/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            screens: {
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+                },
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                lightblue: 'hsl(194, 100%, 47%)',
+                darkblue: 'hsl(218, 100%, 22%)',
+                brandblack:'hsl(0, 0%, 0%)'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="flex items-center justify-between md:px-10 py-4">
+        <div  class="w-1 flex-1 flex items-center justify-start nav-logo">
+            <img src="./images/paytm_logo.png" alt="Paytm Logo" class="w-44">
+        </div>
+        <nav class="flex-3 flex justify-center">
+            <ul class="nav-ul hidden md:flex justify-between gap-4 text-lg">
+                <li>Paytm for Consumer</li>
+                <li>Paytm for Business</li>
+                <li>Company</li>
+                <li>Investor Relations</li>
+                <li>Career</li>
+            </ul>
+        </nav>
+        <div class="flex-1 flex justify-end sign-in-div mr-1">
+            <div class="sign-in bg-lightblue text-white pl-6 pr-0.5 py-0.5 font-bold flex justify-end items-center gap-1 rounded-2xl">
+                Sign In
+                <svg class=" profile-icon fill-white w-8 h-8 rounded-full" 
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/>
+            </svg></div>
+        </div>
+    </header>
+    <div class="sub-head-1 flex justify-between px-5 md:px-1 md:justify-center gap-2 text-lg py-2">
+        <span class="font-medium">
+            No Wallet KYC Required
+        </span>
+        <span>
+            😊to pay using UPI on Paytm.
+        </span>
+        <a href="#learn-more" class="font-medium"> Learn more.</a>
+    </div>
+    <div class="app-link-div flex flex-col-reverse md:flex-row justify-start md:justify-between items-strech md:items-center pt-3">
+        <div class="app-link-div-left flex-1 flex flex-col items-center md:items-start md:pl-44 px-4 " >
+            <img src="./images/app-icon.png" alt="" class="w-20 my-12">
+            <h1 class="text-5xl font-bold mb-10">India's Most-loved<br/>Payments App</h1>
+            <p class="text-lg">Recharge & pay bills, book flights & movie tickets,<br/>
+                 open a savings account, invest in stocks & mutual<br/>
+                  funds, and do a lot more.</p>
+            <div class="app-link mt-6 bg-brandblack hover:bg-transparent text-white hover:text-brandblack px-4 py-2 rounded-3xl">Download Paytm App <a href=""><i class="fab fa-google-play px-1"></i></a><a href=""><i class="fa-brands fa-app-store-ios px-1"></i></a></div>
+        </div>
+        <div class="flex-1 flex justify-end">
+            <img src="./images/phone-paytm.webp" class= "w-3/4 md:w-5/6" alt="">
+        </div>
+    </div>
+   
+
+</body>
+</html>

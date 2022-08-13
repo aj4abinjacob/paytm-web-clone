@@ -1,0 +1,65 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding : 0;
+  }
+
+body{
+    background:hsl(0, 0%, 96%);
+}
+
+header{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.sign-in-div:hover{
+    cursor: pointer;
+}
+
+.sign-in-div:hover > .sign-in{
+     background: hsl(218, 100%, 22%);
+  }
+
+.profile-icon{
+    background: hsl(218, 100%, 22%);
+    padding: 3px;
+}
+
+.sign-in-div:hover .profile-icon{
+ background-color: hsl(194, 100%, 47%);
+}
+
+.nav-ul{
+    color:hsl(202, 100%, 11%);
+}
+.nav-ul > li{
+    cursor: pointer;
+    font-weight: 600;
+    padding: .6rem 1rem;
+}
+
+.nav-ul > li:hover{
+    background-color: hsl(216, 24%, 96%);;
+}
+
+.nav-logo{
+    text-align: center;
+}
+
+.app-link-div{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.app-link {
+    border: 1px solid black;
+    cursor: pointer;
+}
