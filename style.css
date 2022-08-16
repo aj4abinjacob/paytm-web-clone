@@ -140,6 +140,7 @@ header{
         grid-template-columns: repeat(3,125px);
         justify-content: space-around;
         height: fit-content;
+        align-content: center;
         row-gap: 10px;
         padding: 10px;
     }
