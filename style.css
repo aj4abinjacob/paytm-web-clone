@@ -135,8 +135,9 @@ header{
 
 
     .features-div{
+        text-align: center;
         height: 100vh;
-        gap:5px;
+        column-gap:2px;
         grid-template-columns: repeat(3,125px);
         justify-content: space-around;
         height: fit-content;
@@ -146,7 +147,11 @@ header{
     }
 
     .features-card{
-        width: 125px;
+        width: fit-content;
+    }
+    .features-card img{
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
