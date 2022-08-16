@@ -13,6 +13,10 @@
   padding : 0;
   }
 
+:root{
+    --test-border: 1px solid red;
+}
+
 body{
     background:hsl(0, 0%, 96%);
 }
@@ -88,27 +92,58 @@ header{
     height: 170px;
 }
 
+.features-div-header{
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+
+
 .features-card img{
     margin-bottom: 10px;
+}
+
+.features-div a span{
+    font-weight: 600;
+}
+
+.features-div:last-of-type a::after{
+   transform: translateY(3px);
+}
+
+.features-div-header{
+  
+    width: 100%;
+    height:fit-content;
 }
 
 
 
 @media screen and (max-width:800px) {
 
+  
     .features-div a::after{
         content: '';
         margin-left: .35rem;
         position: absolute;
     }
+
+    .features-div-header{
+        margin-top: 10px;
+    }
     
 
 
     .features-div{
+        height: 100vh;
         gap:5px;
         grid-template-columns: repeat(3,150px);
         justify-content: space-around;
         height: fit-content;
+        row-gap: 10px;
+        padding: 10px;
     }
+
+
     
 }
