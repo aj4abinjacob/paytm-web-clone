@@ -37,7 +37,8 @@
                 brandblack:'hsl(0, 0%, 0%)',
                 bluehover:'hsl(194, 100%, 45%)',
                 darkbluehover:'hsl(214, 82%, 28%)',
-                cardwhite:'hsl(0, 0%, 100%)'
+                cardwhite:'hsl(0, 0%, 100%)',
+                bodybg:'hsl(0, 0%, 96%)'
               },
               gridTemplateColumns:{
                 'feature-card-col':'repeat(7,170px)'
@@ -135,7 +136,7 @@
         </div>
 
         <!-- UPI MOney Transfer -->
-        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-cardwhite">
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col md:flex-row justify-between items-center p-[20px] bg-cardwhite">
             <div class="left-div flex-1">
                 <div class="flex items-center">
                     <img class=" w-[70px] mx-[10px] mb-[25px]" src="./images/UPI Transfer ICON.png" alt="">
@@ -204,7 +205,7 @@
         </div>
         
         <!-- Paytm Money -->
-        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-transparent">
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col md:flex-row justify-between items-center p-[20px] bg-transparent">
             <div class="left-div flex-1">
                 <img src="./images/paytm money.webp" class="w-[450px]" alt="">
             </div>
@@ -212,8 +213,8 @@
                 <div class="flex items-center">
                     <img class=" w-[170px] mx-[10px] mb-[25px]" src="./images/paytm money ico.webp" alt="">
                 </div>
-                <h2 class="text-2xl font-bold">India's most sincere <br/>bank.</h2>
-                <p class="mt-[20px] text-lg w-[40ch]">Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.</p>
+                <h2 class="text-3xl font-bold">Build Long-term <br>Wealth & Achieve<br> your Goals.</h2>
+                <p class="mt-[20px] text-lg w-[40ch]">Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.</p>
                 <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-4 py-2 rounded-3xl w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>   
             </div>
         </div>
@@ -233,9 +234,65 @@
                 <img src="./images/paytm insurance.webp" class="w-[450px]" alt="">
             </div>
         </div>
-        
+
+        <!-- Paytm Loan -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col md:flex-row justify-between items-center p-[20px] bg-cardwhite">
+            <div class="left-div flex-1">
+                <img src="./images/paytm loan.webp" class="w-[450px]" alt="">
+                
+            </div>
+            <div class="right-div flex-1">
+                <div class="flex items-center">
+                    <img class=" w-[170px] mx-[10px] mb-[25px]" src="./images/paytm loan ico.png" alt="">
+                </div>
+                <h2 class="text-2xl font-bold">Get a Personal Loan in<br/> 2 Minutes.</h2>
+                <p class="mt-[20px] text-lg w-[40ch]">Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.</p>
+                <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-4 py-2 rounded-full w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="paytm-business-div-container flex flex-col mx-[10px] bg-cardwhite pt-[50px]">
+        <h1 class="text-5xl font-bold mx-[10px] md:mx-[10vw] my-[20px] mb-[25px]">Business Services by Paytm</h1>
+        <!-- accept payments -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] pr-0 bg-bodybg mx-[10px] md:mx-[10vw]">
+            <div class="left-div flex-1 flex flex-col items-center">
+                <div>
+                    <h2 class="text-4xl font-bold">Accept payments<br /> online with ease.</h2>
+                    <p class="mt-[20px] text-lg w-[40ch]">Grow your business with the payment gateway that powers India’s largest brands and even the Paytm App</p>
+                    <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-4 py-2 rounded-full w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>
+                </div>
+            </div>
+            <div class="right-div flex-1">
+                <img src="./images/accept payments.webp" class="w-[500px] ml-auto" alt="">
+            </div>
+        </div>
+        <!-- inshop payments -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] pr-0 bg-bodybg mx-[10px] md:mx-[10vw]">
+            <div class="left-div flex-1 flex flex-col items-center">
+                <div>
+                    <h2 class="text-4xl font-bold">In-shop payments<br> by Paytm.</h2>
+                    <p class="mt-[20px] text-lg w-[40ch]">Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants.</p>
+                    <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-4 py-2 rounded-full w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>
+                </div>
+            </div>
+            <div class="right-div flex-1">
+                <img src="./images/inshop payments.webp" class="w-[500px] ml-auto" alt="">
+            </div>
+        </div>
+
+        <!-- business tools -->
+        <div class="mx-[10px] md:mx-[10vw]">
+            <h2 class="text-4xl mt-[10px] md:my-[50px] font-bold">Business Tools to help <br>your business grow</h2>
+
+        </div>
+
+
+
 
     </div>
+
+
 
 
 
