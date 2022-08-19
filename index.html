@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script>
+        
         tailwind.config = {
             screens: {
                 'sm': '640px',
@@ -115,24 +116,130 @@
         <div class="features-card w-44  cursor-pointer hover:bg-darkbluehover"><img src="./images/Invest in Stocks.webp" alt="" class="icon w-16"><a href=""><span>Invest <br/>in Stocks</span></a></div>
     </div>
 
-    <div class="paytm-wallet-div-container mx-[10px] md:mx-[10vw]">
+    <div class="paytm-wallet-div-container flex flex-col mx-[10px] md:mx-[10vw]">
         <h1 class="text-4xl my-[20px] font-bold">Paytm Payment Instruments</h1>
-        <div class="paytm-wallet-div flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-cardwhite">
+        <div class="paytm-wallet-div flex h-fit md:h-[75vh] mb-[10px ] md:mb-[100px] flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-cardwhite">
             <div class="left-div flex-1">
                 <div class="flex items-center">
                     <img class=" w-[70px] mx-[10px] mb-[25px]" src="./images/wallet icon.png" alt="">
                     <h3 class="font-semibold">Paytm<br/>Wallet</h3>
                 </div>
-                <h2 class="text-2xl font-semibold">The Fastest Way to<br/> Pay In-store & Online.</h2>
-                <p>Load up your Paytm Wallet for free and make payments<nr/> in a jiffy at over 21 million stores, websites and apps.</p>
-                <div class="app-link mt-6 bg-brandblack hover:bg-transparent text-white hover:text-brandblack mx-auto md:mx-0 px-4 py-2 rounded-3xl w-fit">Download Paytm App <a href=""><i class="fab fa-google-play px-1"></i></a><a href=""><i class="fa-brands fa-app-store-ios px-1"></i></a></div>
+                <h2 class="text-2xl font-bold">The Fastest Way to<br/> Pay In-store & Online.</h2>
+                <p class="mt-[20px] text-lg">Load up your Paytm Wallet for free and make payments<br/> in a jiffy at over 21 million stores, websites and apps.</p>
+                <div class="app-link text-lg mt-6 bg-brandblack hover:bg-transparent text-white hover:text-brandblack mx-auto md:mx-0 px-4 py-2 rounded-3xl w-fit">Download Paytm App <a href=""><i class="fab fa-google-play px-1"></i></a><a href=""><i class="fa-brands fa-app-store-ios px-1"></i></a></div>
 
             </div>
             <div class="right-div flex-1">
                 <img src="./images/Paytm Wallet.webp" class="w-[600px]" alt="">
             </div>
         </div>
+
+        <!-- UPI MOney Transfer -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-cardwhite">
+            <div class="left-div flex-1">
+                <div class="flex items-center">
+                    <img class=" w-[70px] mx-[10px] mb-[25px]" src="./images/UPI Transfer ICON.png" alt="">
+                    <h3 class="font-semibold">UPI Money<br/>Transfer</h3>
+                </div>
+                <h2 class="text-2xl font-bold">Pay anyone directly<br/> from your bank<br/>account.</h2>
+                <p class="mt-[20px] text-lg">Pay anyone, everywhere. Make contactless & secure<br/> payments in-stores or online using Paytm Wallet or<br/>
+                    Directly from your Bank Account. Plus, send & receive<br/> money from anyone.</p>
+                <div class="app-link text-lg mt-6 bg-brandblack hover:bg-transparent text-white hover:text-brandblack mx-auto md:mx-0 px-4 py-2 rounded-3xl w-fit">Download Paytm App <a href=""><i class="fab fa-google-play px-1"></i></a><a href=""><i class="fa-brands fa-app-store-ios px-1"></i></a></div>
+
+            </div>
+            <div class="right-div flex-1">
+                <img src="./images/UPI transfer.webp" class="w-[600px]" alt="">
+            </div>
+        </div>
+        <!-- Paytm Postpaid -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-cardwhite">
+            <div class="left-div flex-1">
+                <div class="flex items-center">
+                    <img class=" w-[170px] mx-[10px] mb-[25px]" src="./images/Paytm Postpaid ICO.webp" alt="">
+                </div>
+                <h2 class="text-2xl font-bold">Want it?<br/>No more waiting for it</h2>
+                <p class="mt-[20px] text-lg">With Paytm Postpaid, your wishlist doesn't have to be<br/> on the waitlist. Shop for the things you want today and<br/>
+                    pay for them next month.</p>
+                <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-4 py-2 rounded-3xl w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>
+
+            </div>
+            <div class="right-div flex-1">
+                <img src="./images/Paytm Postpaid.webp" class="w-[450px]" alt="">
+            </div>
+        </div>
+
+        <!-- Credit Cards -->
+        <div class="paytm-cc-div h-fit md:h-[75vh] flex gap-[40px] mb-[10px] md:mb-[100px]">
+            <div class="hdfc-card-div flex-1 flex-col bg-cardwhite p-[20px] rounded-2xl items-center">
+                <img src="./images/paytm hdfc icon.png" class="w-[250px]" alt="">
+                <h2 class="text-2xl font-bold my-[20px]">Unlimited Cashback<br/>
+                    Every time</h2>
+                <p></p>
+                <img src="./images/paytm hdfc.webp" class="w-[400px]" alt="">
+            </div>
+            <div class="sbi-card-div flex-1 flex-col bg-cardwhite p-[20px] rounded-2xl items-center">
+                <img src="./images/paytm sbi.png" class="w-[250px] mt-[80px]" alt="">
+                <h2 class="text-2xl font-bold my-[20px]">Unlimited Cashback<br/>
+                    Every time</h2>
+                <p></p>
+                <img src="./images/paytm sbi.webp" class="w-[400px]" alt="">
+            </div>
+        </div>
+
+        <!-- Payments bank -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-cardwhite">
+            <div class="left-div flex-1">
+                <h1 class="text-4xl font-bold mb-[15px]">Financial Services by Paytm</h1>
+                <div class="flex items-center">
+                    <img class=" w-[170px] mx-[10px] mb-[25px]" src="./images/payment bank ico.png" alt="">
+                </div>
+                <h2 class="text-2xl font-bold">India's most sincere <br/>bank.</h2>
+                <p class="mt-[20px] text-lg w-[40ch]">Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.</p>
+                <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-6 py-4 rounded w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>
+
+            </div>
+            <div class="right-div flex-1">
+                <img src="./images/Patym payments bank.webp" class="w-[450px]" alt="">
+            </div>
+        </div>
+        
+        <!-- Paytm Money -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-transparent">
+            <div class="left-div flex-1">
+                <img src="./images/paytm money.webp" class="w-[450px]" alt="">
+            </div>
+            <div class="right-div flex-1">
+                <div class="flex items-center">
+                    <img class=" w-[170px] mx-[10px] mb-[25px]" src="./images/paytm money ico.webp" alt="">
+                </div>
+                <h2 class="text-2xl font-bold">India's most sincere <br/>bank.</h2>
+                <p class="mt-[20px] text-lg w-[40ch]">Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.</p>
+                <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-4 py-2 rounded-3xl w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>   
+            </div>
+        </div>
+
+        <!-- Paytm insurance -->
+        <div class="paytm-wallet-div h-fit md:h-[75vh] mb-[10px] md:mb-[100px] flex flex-col-reverse md:flex-row justify-between items-center p-[20px] bg-cardwhite">
+            <div class="left-div flex-1">
+                <div class="flex items-center">
+                    <img class=" w-[170px] mx-[10px] mb-[25px]" src="./images/paytm insurance ico.webp" alt="">
+                </div>
+                <h2 class="text-2xl font-bold">Insurance made easy.</h2>
+                <p class="mt-[20px] text-lg w-[40ch]">Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.</p>
+                <div class="app-link mt-6 bg-darkblue text-lg hover:bg-lightblue text-white border-0 mx-auto md:mx-0 px-4 py-2 rounded-full w-fit">Learn More<i class="fa-solid fa-angle-right ml-1"></i></div>
+
+            </div>
+            <div class="right-div flex-1">
+                <img src="./images/paytm insurance.webp" class="w-[450px]" alt="">
+            </div>
+        </div>
+        
+
     </div>
+
+
+
+    
    
 
 </body>
