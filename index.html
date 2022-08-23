@@ -38,7 +38,10 @@
                 bluehover:'hsl(194, 100%, 45%)',
                 darkbluehover:'hsl(214, 82%, 28%)',
                 cardwhite:'hsl(0, 0%, 100%)',
-                bodybg:'hsl(0, 0%, 96%)'
+                bodybg:'hsl(0, 0%, 96%)',
+                lastfdbg:'hsl(196, 100%, 97%)',
+                cardlightblue:'hsl(196, 100%, 70%)',
+                footercolor: 'hsl(216, 33%, 97%)'
               },
               gridTemplateColumns:{
                 'feature-card-col':'repeat(7,170px)'
@@ -282,22 +285,105 @@
         </div>
 
         <!-- business tools -->
-        <div class="mx-[10px] md:mx-[10vw]">
+        <div class="mx-[10px] md:mx-[10vw] gap-4">
             <h2 class="text-4xl mt-[10px] md:my-[50px] font-bold">Business Tools to help <br>your business grow</h2>
+            <div class="business-tools-cards-container grid gap-3 grid-cols-1 md:grid-cols-4 justify-between items-start">
+                <div class="flex flex-col gap-[20px]">
+                    <img src="./images/billing software.webp" class= "w-[400px]" alt="">
+                    <h2 class="text-2xl font-bold w-[10ch]">POS Billing Software</h2>
+                    <p class="w-[20ch] text-lg">Say Hello to Smart Retail Business Management</p>
+                    <a href="#" class="font-bold">Learn More</a>
+                </div>
+                <div class="flex flex-col gap-[20px]">
+                    <img src="./images/paytm for usiness.webp" class= "w-[400px]" alt="">
+                    <h2 class="text-2xl font-bold w-[10ch]">Paytm for Business App</h2>
+                    <p class="w-[20ch] text-lg">Everything you need to manage your business on your phone</p>
+                    <a href="#" class="font-bold">Learn More</a>
+                </div>
+                <div class="flex flex-col gap-[20px]">
+                    <img src="./images/advertise on peytm.webp" class= "w-[400px]" alt="">
+                    <h2 class="text-2xl font-bold w-[12ch]">Advertise on Paytm</h2>
+                    <p class="w-[20ch] text-lg">Grow your business by advertising on India's largest mobile business</p>
+                    <a href="#" class="font-bold">Learn More</a>
+                </div>
+                <div class="flex flex-col gap-[20px]">
+                    <img src="./images/Business kata.webp" class= "w-[500px]" alt="">
+                    <h2 class="text-2xl font-bold w-[10ch]">Business Kata</h2>
+                    <p class="w-[20ch] text-lg">Managing Khata made easy</p>
+                    <a href="#" class="font-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="last-feature-div bg-lastfdbg mt-[50px]">
+            <div class="paytm-money-features mx-[10px] md:mx-[10vw] grid grid-cols-2 p-[20px] mt-[30px] items-center md:grid-cols-5 gap-[20px] bg-cardwhite">
+                <div class="flex flex-col justify-around">
+                    <img src="./images/paytm money ico.webp" class="w-[150px]" alt="">
+                    <p class="mt-[20px]">Get started on wealth creation journey with Zero brokerage fee & no hidden charges.</p>
+                    <a href="#" class="font-semi-bold text-lightblue">Learn More</a>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] bg-cardlightblue p-[10px] text-center text-white font-bold">
+                    <img src="./images/bull.webp" class="w-[175px] hover:w-[180px] cursor-pointer m-auto" alt="bull">
+                    <h3>Invest in Stocks</h3>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] bg-cardlightblue p-[10px] text-center text-white font-bold">
+                    <img src="./images/ipo.webp" class="w-[175px] hover:w-[180px] cursor-pointer m-auto" alt="bull">
+                    <h3>Apply for IPO</h3>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] bg-cardlightblue p-[10px] text-center text-white font-bold">
+                    <img src="./images/etf.webp" class="w-[175px] hover:w-[180px] cursor-pointer m-auto" alt="bull">
+                    <h3>Invest in ETFs</h3>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] bg-cardlightblue p-[10px] text-center text-white font-bold">
+                    <img src="./images/gold.webp" class="w-[175px] hover:w-[180px] cursor-pointer m-auto" alt="bull">
+                    <h3>Buy Gold</h3>
+                </div>
+            </div>
+            <div class="paytm-money-features mt-[30px] mx-[10px] md:mx-[10vw] p-[20px] mt-[30px]  grid grid-cols-2 items-center md:grid-cols-5 gap-[20px] bg-cardwhite">
+                <div class="flex flex-col justify-around">
+                    <img src="./images/paytm travel ico.webp" class="w-[150px]" alt="">
+                    <p class="mt-[20px]">Best travel solutions with quick ticket bookings, great offers and easy refunds.</p>
+                    <a href="#" class="font-semi-bold text-lightblue">Learn More</a>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] flex flex-col justify-around h-[220px]  bg-cardlightblue p-[10px] text-white font-bold">
+                    <img src="./images/plane.webp" class="w-[80px] cursor-pointer m-auto" alt="bull">
+                    <h3>Flat 14% Cashback</h3>
+                    <small>With code WELCOME FLIGHT</small>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] flex flex-col justify-around h-[220px]  bg-cardlightblue p-[10px] text-white font-bold">
+                    <img src="./images/refund.webp" class="w-[80px] cursor-pointer m-auto" alt="bull">
+                    <h3>100% Refund</h3>
+                    <small>With Paytm's Cancellation protext</small>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] flex flex-col justify-around h-[220px]  bg-cardlightblue p-[10px] text-white font-bold">
+                    <img src="./images/bus.webp" class="w-[80px] cursor-pointer m-auto" alt="bull">
+                    <h3>Flat 10% Cashback</h3>
+                    <small>With Code HAPPYBUS</small>
+                </div>
+                <div class="feature-card rounded-2xl w-[190px] flex flex-col justify-around h-[220px]  bg-cardlightblue p-[10px] text-white font-bold">
+                    <img src="./images/saniti.webp" class="w-[80px] cursor-pointer m-auto" alt="bull">
+                    <h3>Sanitised Bus Options With TravelSafe+</h3>
+                </div>
+               
+            </div>
         </div>
 
 
 
 
     </div>
-
-
-
-
-
-    
-   
+    <footer class="bg-footercolor flex px-[40px] py-[40pxgit ] justify-between align-center">
+        <div class="hidden md:flex">
+            <h3 class="text-lg font-semi-bold w-[20ch]">Download Paytm App to Pay from anywhere</h3>
+            <img src="./images/appstore.svg" class="w-[150px]" alt="">
+            <img src="./images/googleplay.svg" class="w-[170px]" alt="">
+        </div>
+        <div class="flex gap-[10px] justify-between align-center">
+            <img src="./images/twitter.svg" class="w-[25px] h-[25px]" alt="">
+            <img src="./images/instagram.svg" class="w-[25px] h-[25px]" alt="">
+            <img src="./images/facebook.svg" class="w-[25px] h-[25px]" alt="">
+        </div>
+    </footer>
 
 </body>
 </html>
