@@ -8,7 +8,155 @@
     <link rel="shortcut icon" href="https://paytm.com/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <style>
+        
+body{
+    background:hsl(0, 0%, 96%);
+}
+
+header{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.sign-in-div:hover{
+    cursor: pointer;
+}
+
+.sign-in-div:hover > .sign-in{
+     background: hsl(218, 100%, 22%);
+  }
+
+.profile-icon{
+    background: hsl(218, 100%, 22%);
+    padding: 3px;
+}
+
+.sign-in-div:hover .profile-icon{
+ background-color: hsl(194, 100%, 47%);
+}
+
+.nav-ul{
+    color:hsl(202, 100%, 11%);
+}
+.nav-ul > li{
+    cursor: pointer;
+    font-weight: 600;
+    padding: .6rem 1rem;
+}
+
+.nav-ul > li:hover{
+    background-color: hsl(216, 24%, 96%);;
+}
+
+.nav-logo{
+    text-align: center;
+}
+
+.app-link-div{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.app-link {
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* 
+.features-card:hover{
+    background-color: hsl(194, 100%, 45%);
+} */
+
+.features-div{
+    gap:10px;
+    grid-template-columns: repeat(7,170px);
+    height: 50vh;
+}
+
+.features-div a::after{
+    content: url("data:image/svg+xml,%3Csvg fill='%23fff' width='12px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512'%3E%3C!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z'/%3E%3C/svg%3E");
+    margin-left: .35rem;
+    position: absolute;
+}
+
+
+.features-card{
+    width: 150px;
+    padding: 20px;
+    border-radius: 0.75rem;
+    height: 170px;
+}
+
+.features-div-header{
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+
+
+.features-card img{
+    margin-bottom: 10px;
+}
+
+.features-div a span{
+    font-weight: 600;
+}
+
+.features-div:last-of-type a::after{
+   transform: translateY(3px);
+}
+
+.features-div-header{
+  
+    width: 100%;
+    height:fit-content;
+}
+
+
+
+
+
+@media screen and (max-width:800px) {
+
+  
+    .features-div a::after{
+        content: '';
+        margin-left: .35rem;
+        position: absolute;
+    }
+
+    .features-div-header{
+        margin-top: 10px;
+    }
+    
+
+
+    .features-div{
+        text-align: center;
+        height: 100vh;
+        column-gap:2px;
+        grid-template-columns: repeat(3,125px);
+        justify-content: space-around;
+        height: fit-content;
+        align-content: center;
+        row-gap: 10px;
+        padding: 10px;
+    }
+
+    .features-card{
+        width: fit-content;
+    }
+    .features-card img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paytm-cc-div{
+        flex-direction: column;
+    }
+
+
+    
+}
+    </style>
     <script>
         
         tailwind.config = {
